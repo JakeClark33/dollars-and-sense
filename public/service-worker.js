@@ -4,7 +4,7 @@ const CACHE_NAME = APP_PREFIX + VERSION
 const FILES_TO_CACHE = [
   "./index.html",
   "./public/css/style.css",
-  "./dist/app.bundle.js",
+  "./public/js/index.js",
 ];
 
 // Respond with cached resources
