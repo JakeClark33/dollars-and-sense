@@ -1,12 +1,12 @@
 {
-  "name": "Food Event",
-  "short_name": "Foodies",
+  "name": "Dollars and Sense",
+  "short_name": "Balance",
   "orientation": "portrait",
   "display": "standalone",
-  "start_url": "../index.html",
-  "description": "An app that allows you to view upcoming food events.",
-  "background_color": "#01579b",
-  "theme_color": "#ffffff",
+  "start_url": "./index.html",
+  "description": "An app that allows you to manage your budget on or offline.",
+  "background_color": "#181714",
+  "theme_color": "#fdd272",
   "icons": [
     {
         "src": "/img/icons/icons-192.png",
