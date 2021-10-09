@@ -13,7 +13,7 @@ let myChart;
 fetch("/api/transaction")
   .then(response => {
     return response.json();
-  })
+    })
   .then(data => {
     // save db data on global variable
     if (data.length > 0 ) {
@@ -133,7 +133,7 @@ function sendTransaction(isAdding) {
     }
   })
   .then(response => {    
-    return response.json('Your transaction has been completed');
+    return response.json();
   })
   .then(data => {
     if (data.errors) {
@@ -143,6 +143,7 @@ function sendTransaction(isAdding) {
       // clear form
       nameEl.value = "";
       amountEl.value = "";
+      window.alert("Your transaction is complete!")
     }
   })
   .catch(err => {
