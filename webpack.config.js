@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const path = require("path");
 
 const config = {
@@ -39,25 +40,10 @@ const config = {
             new BundleAnalyzerPlugin({
               analyzerMode: 'static'
             }),
-            new WebpackPwaManifest({
-              name: 'Dollars And Sense',
-              short_name: 'Balance',
-              description: 'An app that allows you to view and update your budget.',
-              start_url: '../index.html',
-              background_color: '#01579b',
-              theme_color: '#ffffff',
-              fingerprints: false,
-              inject: false,
-              icons: [
-                {
-                  src: path.resolve('assets/img/icons/icon-512x512.png'),
-                  sizes: [96, 128, 192, 256, 384, 512],
-                  destination: path.join('assets', 'icons')
-                }
-              ]
-            })
-          ],
-          mode: 'development'
+            
+              ],
+            
+              mode: 'development'
         };
         
         module.exports = config;
