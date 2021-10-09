@@ -5,7 +5,6 @@ router.post("/api/transaction", ({body}, res) => {
   Transaction.create(body)
     .then(dbTransaction => {
       res.json(dbTransaction);
-      return window.alert('Your transaction was successfully created!')
     })
     .catch(err => {
       res.status(404).json(err);
@@ -16,6 +15,7 @@ router.post("/api/transaction/bulk", ({body}, res) => {
   Transaction.insertMany(body)
     .then(dbTransaction => {
       res.json(dbTransaction);
+      window.alert('Transaction successfully created!')
     })
     .catch(err => {
       res.status(404).json(err);
