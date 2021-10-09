@@ -3,18 +3,18 @@
   "short_name": "Balance",
   "orientation": "portrait",
   "display": "standalone",
-  "start_url": "./index.html",
+  "start_url": "/index.html",
   "description": "An app that allows you to manage your budget on or offline.",
   "background_color": "#181714",
   "theme_color": "#fdd272",
   "icons": [
     {
-        "src": "/img/icons/icons-192.png",
+        "src": "/icons/icon-192x192.png",
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "/img/icons/icons-512.png",
+        "src": "/icons/icon-512x512.png",
         "type": "image/png",
         "sizes": "512x512"
       }

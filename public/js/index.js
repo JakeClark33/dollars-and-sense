@@ -1,6 +1,6 @@
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./service-worker.js')
+    navigator.serviceWorker.register('/service-worker.js')
     .then( () => {
       console.log('Success!')
     })
@@ -16,7 +16,9 @@ fetch("/api/transaction")
   })
   .then(data => {
     // save db data on global variable
-    transactions = data;
+    if (data.length > 0 ) {
+      transactions = data;
+    }
 
     populateTotal();
     populateTable();
