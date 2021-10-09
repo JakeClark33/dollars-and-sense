@@ -1,11 +1,11 @@
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/service-worker.js')
-    .then( () => {
-      console.log('Success!')
-    })
-  } )
-}
+// if ('serviceWorker' in navigator) {
+//   window.addEventListener('load', () => {
+//     navigator.serviceWorker.register('/service-worker.js')
+//     .then( () => {
+//       console.log('Success!')
+//     })
+//   } )
+// }
 
 let transactions = [];
 let myChart;
