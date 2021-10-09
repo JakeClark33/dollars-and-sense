@@ -133,7 +133,7 @@ function sendTransaction(isAdding) {
     }
   })
   .then(response => {    
-    return response.json('Your transaction has been added!');
+    return response.json('Your transaction has been completed');
   })
   .then(data => {
     if (data.errors) {
@@ -148,6 +148,7 @@ function sendTransaction(isAdding) {
   .catch(err => {
     // fetch failed, so save in indexed db
     saveRecord(transaction);
+    alert('You are offline but your data has been saved!')
 
     // clear form
     nameEl.value = "";
