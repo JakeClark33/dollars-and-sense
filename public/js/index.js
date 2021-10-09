@@ -133,7 +133,7 @@ function sendTransaction(isAdding) {
     }
   })
   .then(response => {    
-    return response.json();
+    return response.json('Your transaction has been added!');
   })
   .then(data => {
     if (data.errors) {
