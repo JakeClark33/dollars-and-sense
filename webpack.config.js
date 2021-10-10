@@ -43,7 +43,7 @@ const config = {
             
               ],
             
-              mode: 'development'
+              mode: 'no-cors'
         };
         
         module.exports = config;
